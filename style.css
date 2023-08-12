@@ -373,6 +373,56 @@ text-shadow: 3px 0px 3px black;
     margin: 5px auto;
 }
 
+/* For screens with width up to 1365px */
+@media screen and (max-width: 1365px) {
+    /* Adjust margins and paddings to create spacing suitable for smaller screens */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Resize font sizes for better readability on smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust image sizes and positions */
+    #Prof_image {
+        width: 250px;
+        height: 250px;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    /* Modify layout and alignment of elements */
+    .Intro_Box {
+        margin-left: 10%;
+    }
+
+    /* Adjust spacing and sizing of the about section */
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .aboutImage {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .serviceBoxes {
+        transform: none;
+        margin-top: 20px;
+    }
+    .serviceBox {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .aboutBox {
+        width: 100%;
+        right: 0;
+        transform: none;
+    }
+}
+
 
 
 
