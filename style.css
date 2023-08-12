@@ -373,72 +373,7 @@ text-shadow: 3px 0px 3px black;
     margin: 5px auto;
 }
 
-/* Small screens */
-/* ====================================== */
 
-@media (max-width: 768px) {
-    /* Adjust header padding and font size */
-    header {
-        padding: 15px 5%;
-        font-size: 16px;
-    }
-
-    /* Adjust image size */
-    #Prof_image {
-        margin-top: 10%;
-        margin-left: 5%;
-        height: 200px;
-        width: 200px;
-    }
-
-    /* Adjust Intro_Box width and margin */
-    .Intro_Box {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    /* Adjust .aboutContainer layout */
-    .aboutContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjust serviceBoxes layout */
-    .serviceBoxes {
-        transform: none;
-        margin-top: 20px;
-    }
-
-    /* Adjust .aboutBox position and width */
-    .aboutBox {
-        right: 0;
-        width: 90%;
-    }
-
-    /* Adjust projectContainer layout */
-    .projectContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjust .projectBox layout */
-    .projectBox {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    /* Adjust contact layout */
-    .contact {
-        height: 200px;
-        padding: 15px 0;
-    }
-
-    /* Adjust iconList layout */
-    .iconList {
-        margin-top: 10px;
-    }
-}
-/* ====================================== */
 
 
 .popUp {
