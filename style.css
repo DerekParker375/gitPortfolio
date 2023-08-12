@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+li, a, header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    z-index: 1;
+}
+.navbar.navbarDark {
+    background: rgba(000,000,000, 0.8);
+}
+#nameTop{
+    font-size: 20px;
+}
+.nameTop a{
+transition: all 0.3s ease 0s;
+}
+.nameTop a:hover{
+    color: #0088a9;
+} 
+#header{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+.introContainer {
+    background: linear-gradient(to bottom, #9b9af5, #9f9ee2, #FFFFFF);
+    animation: gradient-animation 10s infinite alternate; 
+    height: 790px
+}
+/* 9796F0 */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+#Prof_image{
+    margin-top: 16%;    /*originally 13 to line up */
+    margin-left: 6%;
+    border-radius: 50%;
+
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.5);
+
+    float: left;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+#Prof_image:hover{
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.6);
+    transform: scale(1.05);
+}
+.typewriter{
+    overflow: hidden; /* To hide overflowing text */
+    white-space: nowrap; /* To keep text in a single line */
+    font-family: monospace;
+    font-size: 24px;
+}
+#text{
+color: #edf0f1;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+font-size: 48px;
+margin-top: 30%;
+padding: 3px;
+
+text-shadow: 2px 2px 2px black;
+}
+
+
+.Intro_Box{
+text-align:left;
+height: 200px;
+width: 700px;
+
+padding: 20px;
+margin-left: 36%;
+
+}
+#Intro{
+color: #edf0f1;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+font-size: 40px;
+
+text-shadow: 2px 2px 2px black;
+}
+
+
+
+
+
+
+.whiteSpace{
+    background-color: white;
+    height: 580px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.aboutHeader {
+    font-size: 26px;
+    margin-bottom: 10px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+.aboutContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutImage {
+    display: flex;
+    top: 45px;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.aboutImage:hover {
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.02); 
+}
+
+.serviceBoxes {
+    position: relative;
+    transform: translateX(200%);
+    top: 5px;
+}
+.serviceHeader {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.serviceBox {
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+
+    padding: 5px;
+    border-radius: 10px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.serviceBox:hover {
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.02);
+}
+
+
+
+
+.aboutBox {
+    border-style: 1px solid;
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px black;
+    padding: 25px;
+
+    height: 490px;
+    width: 570px;
+
+    position: relative;
+    top: 5px;
+    right: 285px;
+    overflow: hidden;
+
+    background: linear-gradient(45deg, #FBC8D4, #9796F0);
+    transition: box-shadow 0.3s, transform 0.3s;
+
+}
+
+.aboutBox:hover {
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.02);
+} 
+
+.nameAbout{
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+    list-style: none;
+
+}
+.aboutText{
+    color: #dee9ed;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 3px;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+.portfolioContainer{
+    height: 110px;
+    display: flex;
+    background: linear-gradient(to right, #FBC8D4, #9796F0);
+}
+
+.Portfolio{
+color: #edf0f1;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+font-size: 30px;
+
+text-shadow: 3px 0px 3px black;
+margin-left: 45%;
+margin-top: 40px;
+margin-bottom: 20px;
+
+}
+
+
+
+
+.whiteSpace2{
+    background-color: white;
+    height: 550px;
+    padding: 30px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projectHeader{
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+.projectContainer{
+    display: flex;
+    justify-content: center;
+
+}
+.projectContainer.visible {
+    opacity: 1;
+}
+
+.project{
+    width: 240px;
+    height: 330px;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 5px;
+
+    box-shadow: 3px 3px 3px black;
+    border-radius: 10px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.project:hover{
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.05);
+}
+.projectIcon{
+    height: 100px;
+    width: 226px;
+    border-radius: 9px;
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    position: relative;
+    top: 50px;
+}
+
+.projectDescription {
+    font-size: 14px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 140px;
+    background: linear-gradient(to top, #9796F0, #FBC8D4);
+}
+
+.contactTitle{
+color: #edf0f1;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+font-size: 30px;
+margin-bottom: 10px;
+margin-top: 25px;
+
+text-shadow: 3px 0px 3px black;
+}
+.iconList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.iconList li{
+    margin: 10px;
+}
+.iconList li a {
+    transition: all 0.3s ease 0s;
+}
+.iconList li a:hover{
+    color: black;
+}
+.copwright{
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    margin: 5px auto;
+}
+
+
+.popUp {
+    opacity: 0; /*Start with elements hidden*/
+    transition: opacity 0.8s ease;
+}
+.popUp.visible {
+    opacity: 1;
+}
