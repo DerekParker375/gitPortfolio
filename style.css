@@ -22,7 +22,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
-    font-size: 20px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -75,7 +74,9 @@ transition: all 0.3s ease 0s;
         background-position: 100% 50%;
     }
 }
-
+.hr {
+    width: 50%;
+}
 
 
 #Prof_image{
@@ -135,7 +136,7 @@ text-shadow: 2px 2px 2px black;
 
 .whiteSpace{
     background-color: white;
-    height: 580px;
+    align-content: flex-start;
     padding: 10px;
     width: 100%;
 
@@ -197,7 +198,13 @@ text-shadow: 2px 2px 2px black;
     transform: scale(1.02);
 }
 
-
+.aboutBoxContainer {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
 
 
 .aboutBox {
@@ -206,13 +213,14 @@ text-shadow: 2px 2px 2px black;
     box-shadow: 3px 2px 3px black;
     padding: 25px;
 
-    height: 490px;
     width: 570px;
 
     position: relative;
     top: 5px;
     right: 285px;
     overflow: hidden;
+
+    flex: 1;
 
     background: linear-gradient(45deg, #FBC8D4, #9796F0);
     transition: box-shadow 0.3s, transform 0.3s;
@@ -267,9 +275,12 @@ margin-bottom: 20px;
 
 .whiteSpace2{
     background-color: white;
-    height: 550px;
     padding: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
 
 
     display: flex;
@@ -314,7 +325,7 @@ margin-bottom: 20px;
 }
 .projectIcon{
     height: 100px;
-    width: 226px;
+    width: 100%;
     border-radius: 9px;
 
     display: flex;
@@ -335,6 +346,7 @@ margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: flex-start;
 
     height: 140px;
     background: linear-gradient(to top, #9796F0, #FBC8D4);
@@ -373,63 +385,162 @@ text-shadow: 3px 0px 3px black;
     margin: 5px auto;
 }
 
-/* For screens with width up to 1365px */
-@media screen and (max-width: 1365px) {
-    /* Adjust margins and paddings to create spacing suitable for smaller screens */
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Resize font sizes for better readability on smaller screens */
-    h1 {
-        font-size: 24px;
-    }
-
-    /* Adjust image sizes and positions */
-    #Prof_image {
-        width: 250px;
-        height: 250px;
-        margin-top: 10%;
-        margin-left: 10%;
-    }
-
-    /* Modify layout and alignment of elements */
-    .Intro_Box {
-        margin-left: 10%;
-    }
-
-    /* Adjust spacing and sizing of the about section */
-    .aboutContainer {
-        flex-direction: column;
-    }
-    .aboutImage {
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-    .serviceBoxes {
-        transform: none;
-        margin-top: 20px;
-    }
-    .serviceBox {
-        width: 100%;
-        margin: 10px auto;
-    }
-    .aboutBox {
-        width: 100%;
-        right: 0;
-        transform: none;
-    }
-}
-
-
-
-
 .popUp {
     opacity: 0; /*Start with elements hidden*/
     transition: opacity 0.8s ease;
 }
 .popUp.visible {
     opacity: 1;
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+        margin: none;
+    }
+    .hr {
+        width: 70%;
+    }
+
+    .nav_links {
+        margin-top: 20px;
+    }
+
+    #Prof_image {
+        height: 30%;
+        width: 40%; 
+
+        float: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .introContainer {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+    }
+
+    #text {
+        font-size: 100%;
+        margin-top: 1%;
+
+    }
+    #Intro {
+        font-size: 100%;
+    }
+
+    .Intro_Box {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+        margin-top: 80%;
+
+    }
+
+
+
+    .whitespace {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+
+    }
+    .aboutBoxContainer {
+        flex-direction: column-reverse;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutImage {
+        top: 0;
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .serviceBoxes {
+        transform: translateX(0);
+        margin-top: 10px;
+        order: 2;
+    }
+
+    .serviceBox,
+    .aboutBox {
+        width: 100%;
+        right: 0;
+        
+        display: block;
+        margin: auto;
+    }
+    .aboutBox {
+        order: 1;
+    }
+
+
+
+
+    .portfolioContainer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Portfolio {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    .whiteSpace2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;    
+    }
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        padding: 2%;
+    }
+
+    .projectIcon {
+        top: 0;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        height: auto;
+    }
 }
